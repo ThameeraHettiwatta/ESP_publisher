@@ -114,11 +114,11 @@ static void mqtt_app_start(void)
     esp_mqtt_client_config_t mqtt_cfg = {
         // .uri = "mqtt://mqtt_server:1234@192.168.43.187:1883", //lahiru
         // .uri = "mqtt://mqtt_server:1234@192.168.8.103:1883", //thameera
-        .uri = "mqtt://twhkvnkt:0qLBb25EOa3T@m11.cloudmqtt.com:17595", //cloud mqtt
+        // .uri = "mqtt://twhkvnkt:0qLBb25EOa3T@m11.cloudmqtt.com:17595", //cloud mqtt
 
         ////.uri = "mqtt://192.168.43.187:1883", //lahiru
         //.uri = "mqtt://mqtt_server:1234@192.168.8.102:1883", //thameera
-        // .uri = "mqtt://twhkvnkt:0qLBb25EOa3T@m11.cloudmqtt.com:17595", //cloud mqtt
+        .uri = "mqtt://twhkvnkt:0qLBb25EOa3T@192.168.9.230:1883", //cloud mqtt
     };
 
     client = esp_mqtt_client_init(&mqtt_cfg);
